@@ -46,6 +46,21 @@ angular
                             templateUrl: 'modules/core/views/referralCode.html',
                             controller: 'ReferralcodeController'
                         })
+						.state('userinfo', {
+                            url: '/userinfo',
+                            templateUrl: 'modules/core/views/userinfo.html',
+                            controller: 'UserinfoController'
+                        })
+						.state('products', {
+                            url: '/products',
+                            templateUrl: 'modules/core/views/products.html',
+                            controller: 'ProductsController'
+                        })
+						.state('calenderView', {
+                            url: '/calenderView',
+                            templateUrl: 'modules/core/views/calenderView.html',
+                            controller: 'CalenderviewController'
+                        })
                         .state('logout', {
                             url: '/logout',
                             templateUrl: 'modules/core/views/home.html',

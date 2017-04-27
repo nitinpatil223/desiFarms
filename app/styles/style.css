@@ -26,7 +26,7 @@
     visibility: hidden;
     transition:inherit;
 }
-
+body {    background: #fff0d9 !important;}
 .page-fade{ 
     opacity:0;
     transition:all 500ms ease;
@@ -41,6 +41,7 @@
 #page-content{
     z-index:5;
     transition:all 500ms ease;
+    background: #fff0d9 !important;
 }
 
 /*Swiper*/
@@ -112,7 +113,7 @@
     height:55px;
     line-height:55px;
     transition:all 500ms ease!important;
-	    background: #c26b50;
+	    background: #3a0000;
 }
 
 
@@ -310,7 +311,7 @@
 /*Sidebar Colors*/
 
 .sidebars-light .sidebar{
-	background-color:#FFFFFF;
+	background-color:#fff0d9;
 	-webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0);
 	box-shadow: 0 0 5px 5px rgba(0,0,0,0);	
 }
@@ -803,21 +804,21 @@
 .footer-light .copyright-text{border-top:solid 1px rgba(0,0,0,0.1); color:#656465;}
 .footer-light .footer-socials a{color:#000000;}
 .footer-light .footer-text{color:#666666!important; border-bottom:solid 1px rgba(0,0,0,0.1);}
-.footer-light .footer-logo{background-image:url(../images/logo-dark.png);}
+.footer-light .footer-logo{background-image:url(../images/footer-bg.png);}
 
 .footer-logo{
 	background-repeat: no-repeat;
-	background-position: center center;
-	background-size:180px 47px;
-	width:180px;
-	height:47px;
+	background-position: center bottom;
+	background-size:100%;
+	width:100%;
+	height:100px;
 	z-index:999;
 	margin:0 auto;
 }
 
 .footer{
 	margin-bottom:0px;
-	padding:30px 0px 30px 0px;
+	padding:0;
 }
 
 .footer .copyright-text{
@@ -1043,7 +1044,10 @@
     right: 5px;
 }
 .hide-notification-ref {font-size:14px; width:100%; float:left; text-align:center; text-decoration:underline; cursor:pointer}
+.category-slider .responsive-image {margin-bottom: 0}
 
+/*login*/
+.pageapp-login {padding-top: 0 !important}
 
 
 
