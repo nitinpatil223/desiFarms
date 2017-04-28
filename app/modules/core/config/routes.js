@@ -31,7 +31,7 @@ angular
                             templateUrl: 'modules/core/views/home.html',
                             controller: 'HomeController'
                         })
-						.state('otp', {
+                        .state('otp', {
                             url: '/otp',
                             templateUrl: 'modules/core/views/otp.html',
                             controller: 'OtpController'
@@ -56,7 +56,7 @@ angular
                             templateUrl: 'modules/core/views/products.html',
                             controller: 'ProductsController'
                         })
-						.state('calenderView', {
+			.state('calenderView', {
                             url: '/calenderView',
                             templateUrl: 'modules/core/views/calenderView.html',
                             controller: 'CalenderviewController'
