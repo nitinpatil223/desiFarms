@@ -26,7 +26,6 @@
     visibility: hidden;
     transition:inherit;
 }
-body {    background: #fff0d9 !important;}
 .page-fade{ 
     opacity:0;
     transition:all 500ms ease;
@@ -41,7 +40,7 @@ body {    background: #fff0d9 !important;}
 #page-content{
     z-index:5;
     transition:all 500ms ease;
-    background: #fff0d9 !important;
+   /* background: #fff0d9 !important;*/
 }
 
 /*Swiper*/
@@ -157,15 +156,13 @@ body {    background: #fff0d9 !important;}
 /*.header-light .header-logo{background-image:url(../images/logo-dark.png);}*/
 
 .header-logo{
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size:120px 32px;
-	width:120px;
-	height:54px;
 	z-index:999;
 	color:#fff;
-	font-size:20px;
-	text-transform:uppercase
+	font-size:18px;
+        line-height: 54px;
+	text-transform:uppercase;
+        text-align:center;
+        width:150px;
 }
 
 /*Animated Icons*/
@@ -311,7 +308,7 @@ body {    background: #fff0d9 !important;}
 /*Sidebar Colors*/
 
 .sidebars-light .sidebar{
-	background-color:#fff0d9;
+	background-color:#fff;
 	-webkit-box-shadow: 0 0 5px 5px rgba(0,0,0,0);
 	box-shadow: 0 0 5px 5px rgba(0,0,0,0);	
 }
@@ -1048,6 +1045,16 @@ body {    background: #fff0d9 !important;}
 
 /*login*/
 .pageapp-login {padding-top: 0 !important}
+.page-404 a.cart-img {  color: #ccc !important;border:1px solid #ccc !important; margin-bottom: 15px;}
+.add-cart-btn {background: transparent !important;border-radius: 4px !important;border: 1px solid #2e94ce !important;color:#2e94ce !important;font-size:13px !important;height: auto !important;line-height: 13px !important;padding: 10px !important;margin: 0 auto !important;}
+.cart-page .dark-overlay {background: #fff !important}
+.cart-page p { color: #ccc !important;}
+.tabs-nav {background: #3a0000;/* color: #fff; */margin-top: 1px;}
+.tabs-nav .home-tabs a {color:#c7c4c4;    padding: 5px 0;}
+.tabs-nav .active-home-tab {color: #fff !important;}
+.how-wrap {width: 200px;height: 200px;display: block;margin: 0 auto;text-align: center;border: 1px solid #0077B5;font-size: 100px;padding: 50px 51px;background: #0077B5;color: #fff;margin-bottom: 20px;border-radius: 1000px;}
+
+
 
 
 

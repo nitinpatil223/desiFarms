@@ -61,14 +61,41 @@ angular
                             templateUrl: 'modules/core/views/calenderView.html',
                             controller: 'CalenderviewController'
                         })
+                        .state('addcart', {
+                            url: '/addcart',
+                            templateUrl: 'modules/core/views/addcart.html',
+                            controller: 'AddcartController'
+                        })
+                         .state('myorders', {
+                            url: '/myorders',
+                            templateUrl: 'modules/core/views/myorders.html',
+                            controller: 'MyordersController'
+                        })
+                         .state('billings', {
+                            url: '/billings',
+                            templateUrl: 'modules/core/views/billings.html',
+                            controller: 'BillingsController'
+                        })
+			.state('termsofuse', {
+                            url: '/termsofuse',
+                            templateUrl: 'modules/core/views/termsofuse.html',
+                            controller: 'TermsofuseController'
+                        })
+                        .state('howitworks', {
+                            url: '/howitworks',
+                            templateUrl: 'modules/core/views/howitworks.html',
+                            controller: 'HowitworksController'
+                        })
+                        .state('customercare', {
+                            url: '/customercare',
+                            templateUrl: 'modules/core/views/customercare.html',
+                            controller: 'CustomercareController'
+                        })
                         .state('logout', {
                             url: '/logout',
                             templateUrl: 'modules/core/views/home.html',
                             controller: 'HomeController'
                         })
-                        
-
-                        
-
+                    
             }
         ]);

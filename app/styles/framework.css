@@ -1980,7 +1980,7 @@ ol ol ol{list-style-type:disc;}
 .button-teal:hover{background-color:#1abc9c; border:solid 2px #1abc9c;}
 .button-teal:active{background-color:#16a085; border:solid 2px #16a085;}
 
-.button-green{background-color:#27ae60; border:solid 2px #27ae60;}
+.button-green{background-color:#0067a1; border:solid 2px #0067a1;}
 .button-green-3d{border:none!important; border-bottom:solid 5px #1e7b45!important; padding:0px 22px;}
 .button-green:hover{background-color:#2ecc71; border:solid 2px #2ecc71;}
 .button-green:active{background-color:#27ae60; border:solid 2px #27ae60;}
@@ -3524,7 +3524,7 @@ ul.tabs li.current{
 /*---404 Page---*/
 /*--------------*/
 
-.page-404{width:250px;}
+.page-404{width:275px; text-align: center}
 .page-404 h1, .page-404 h2, .page-404 p, .page-404 i{
     text-align:center;
     display:block;
@@ -3550,8 +3550,10 @@ ul.tabs li.current{
     margin:0 auto;
     line-height:50px;
     border-radius:50px;
-    font-size:20px;
+    font-size:44px;
+      
 }
+
 
 /*----------------------*/
 /*---Coming Soon Page---*/
@@ -3561,7 +3563,7 @@ ul.tabs li.current{
 .date-years, date-years em{display:none;}
 .countdown-light{color:#FFFFFF!important;}
 .countdown-light em{color:#FFFFFF!important; opacity:0.5;}
-.page-soon{max-width:250px; padding-top:60px;}
+.page-soon{max-width:275px; padding-top:60px;}
 
 .page-soon .countdown-class{
     width:250px;
@@ -3595,10 +3597,10 @@ ul.tabs li.current{
     width:60px;
     height:60px;
     margin:0 auto;
-    line-height:57px;
+    line-height:62px;
     border-radius:50px;
-    border:solid 1px rgba(0,0,0,0.4);
-    font-size:20px;
+    border:solid 1px #fff;
+    font-size:41px;
     color:#1f1f1f;
     text-align:center;
 }
@@ -4242,7 +4244,7 @@ ul.tabs li.current{
 .page-login .button{font-size:12px; padding-left:30px!important;}
 .page-login-forgot{
     float:left;
-    font-size:12px;
+    font-size:13px;
     height:50px;
     line-height:50px;
     margin-top:10px;
@@ -4252,7 +4254,7 @@ ul.tabs li.current{
 .page-login-forgot i{padding-right:10px;}
 .page-login-create{
     float:right;
-    font-size:12px;
+    font-size:13px;
     height:50px;
     line-height:50px;
     margin-top:10px;
@@ -4271,7 +4273,7 @@ ul.tabs li.current{
 
 .field-title{padding-left:0px!important;    margin-left:0px!important;}
 .contactField{
-	font-size:12px;
+	font-size:13px;
     -webkit-transition: all 250ms ease;
     -moz-transition: all 250ms ease;
     -ms-transition: all 250ms ease;
@@ -4313,11 +4315,11 @@ ul.tabs li.current{
 }
 
 .contact-form{margin-bottom:20px;}
-.contactNameField{padding-bottom:5px; font-size:12px;}
+.contactNameField{padding-bottom:5px; font-size:13px;}
 .contactNameField span{	float:right; opacity:0.2;}
-.contactEmailField{	padding-bottom:5px;	font-size:12px;}
+.contactEmailField{	padding-bottom:5px;	font-size:13px;}
 .contactEmailField span{float:right; opacity:0.2;}
-.contactMessageTextarea{padding-bottom:5px;	font-size:12px;}
+.contactMessageTextarea{padding-bottom:5px;	font-size:13px;}
 .contactMessageTextarea span{float:right; opacity:0.2;}
 .formFieldWrap{margin-top:-5px;}
 #contactNameField{text-transform:capitalize;}
@@ -4351,7 +4353,7 @@ ul.tabs li.current{
 .contactFormButton #contactSubmitButton{
     height:50px;
     line-height:50px;
-    font-size:13px;
+    font-size:14px;
     font-weight:400;
 }
 
@@ -5484,9 +5486,9 @@ calendar*{display:block; overflow:hidden;}
 }
 
 .home-tabs a{
-    font-size:15px;
+    font-size:13px;
     font-weight:500;
-    width:33.3%;
+    width:50%;
     float:left;
     text-align:center;
     -webkit-transition: all 250ms ease;
@@ -5494,6 +5496,7 @@ calendar*{display:block; overflow:hidden;}
     -ms-transition: all 250ms ease;
     -o-transition: all 250ms ease;
     transition: all 250ms ease;
+    text-transform: uppercase;
 }
 
 .thumb-layout-page a{display:none;}
@@ -6371,18 +6374,19 @@ calendar*{display:block; overflow:hidden;}
 .store-cart-1 .cart-item h4 a:first-child{
     position:absolute;
     margin-top:-2px;
-    font-size:10px;
+    font-size:11px;
     height:35px;
     width:35px;
     text-align:center;
     line-height:35px;
+
 }
 
 .store-cart-1 .cart-item h4 a:last-child{
     position:absolute;
     margin-top:-2px;
     margin-left:60px;
-    font-size:10px;
+    font-size:11px;
     height:35px;
     width:35px;
     text-align:center;
@@ -6399,6 +6403,7 @@ calendar*{display:block; overflow:hidden;}
     margin-left:32px;
     padding:0px;
     text-align:center;
+        color: red;
 }
 
 .store-cart-1 .cart-item h5{
