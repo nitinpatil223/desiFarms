@@ -51,11 +51,17 @@ angular
                             templateUrl: 'modules/core/views/userinfo.html',
                             controller: 'UserinfoController'
                         })
-						.state('products', {
+			.state('products', {
                             url: '/products',
                             templateUrl: 'modules/core/views/products.html',
                             controller: 'ProductsController'
                         })
+                        .state('productsdetails', {
+                            url: '/productsdetails',
+                            templateUrl: 'modules/core/views/productsdetails.html',
+                            controller: 'ProductsdetailsController'
+                        })
+                        
 			.state('calenderView', {
                             url: '/calenderView',
                             templateUrl: 'modules/core/views/calenderView.html',
@@ -90,6 +96,11 @@ angular
                             url: '/customercare',
                             templateUrl: 'modules/core/views/customercare.html',
                             controller: 'CustomercareController'
+                        })
+                        .state('subscription', {
+                            url: '/subscription',
+                            templateUrl: 'modules/core/views/subscription.html',
+                            controller: 'SubscriptionController'
                         })
                         .state('logout', {
                             url: '/logout',

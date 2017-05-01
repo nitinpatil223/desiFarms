@@ -1053,11 +1053,27 @@
 .tabs-nav .home-tabs a {color:#c7c4c4;    padding: 5px 0;}
 .tabs-nav .active-home-tab {color: #fff !important;}
 .how-wrap {width: 200px;height: 200px;display: block;margin: 0 auto;text-align: center;border: 1px solid #0077B5;font-size: 100px;padding: 50px 51px;background: #0077B5;color: #fff;margin-bottom: 20px;border-radius: 1000px;}
+.subscription label, .subscription .pageapp-login-input {display: inline-block}
+.subscription .pageapp-login-input input {margin-top: 0}
+.subscription .pageapp-login-input i {height: inherit !important; line-height: inherit !important; top:18px }
+.subscription h4 {text-align: center}
+.subscription .va {float: left;     width: 60px;}
+.subscription .va1 {float: left;     width: 100%;}
+.subscription .select-box {display: inline-block; width: 70%; float: left;margin-bottom: 0; height: 36px; line-height: 36px}
+.subscription .select-box  select {height: 36px; line-height: 36px}
+.subscription .input-text-box  {display: inline-block; width: 30px; float: left;margin-bottom: 0; height: 36px; line-height: 36px; margin-right: 30px}
+.pageapp-login.subscription  {width: 90%}
+.space-mr {float: left; width: 100%; margin: 10px 0}
+.ch-bx {float: left; width: 100%;}
+.sub-btn {float: left; width:100%; text-align: center}
+.pro-img {width:90px; margin: 0 auto; margin-bottom: 20px;}
+.products-details {    border: 1px solid #ccc; padding: 5px}
 
+@media (max-width: 360px) {
+.subscription .pageapp-login-input i {
+    height: inherit !important; line-height: inherit !important; top:5px !important;
 
-
-
-
+}
 
 
 
