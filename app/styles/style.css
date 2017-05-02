@@ -26,6 +26,7 @@
     visibility: hidden;
     transition:inherit;
 }
+
 .page-fade{ 
     opacity:0;
     transition:all 500ms ease;
@@ -1068,12 +1069,41 @@
 .sub-btn {float: left; width:100%; text-align: center}
 .pro-img {width:90px; margin: 0 auto; margin-bottom: 20px;}
 .products-details {    border: 1px solid #ccc; padding: 5px}
+.main-slider-home { -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    flex-shrink: 0;
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+.payment-history {border: none; margin-top: 20px;background-color: transparent;}
+.payment-history tr td {padding:10px 5px; border: none}
+.payment-history tr td img {width: 33px;margin: 0 auto;}
+.payment-history tr td.green {color: green}
+.payment-history tr td.red {color: red}
+.payment-history tr td.yellow {color: #ffca00}
+.invoice-history {border: none; margin: 10px 0;background-color: transparent;    border: 1px solid #ccc;}
+.invoice-history tr td{border: none; padding: 5px}
+.order-table {border: none; margin: 5px 0;background-color: transparent;    border: 1px solid #ccc;}
+.order-table tr td {padding:5px; border: none}
+.order-title {font-size: 16px; font-weight: bold; color:#0067a1; margin-bottom: 0; margin-top: 15px}
+.order-table tr td .button-green {
+    background-color: #0067a1;
+    border: solid 2px #0067a1;
+    height: 36px;
+    line-height: 35px;
+}
+.store-cart-1 .cart-item .add-qty{
+       color: rgba(0,0,0,0.4) !important;
 
+}
+.store-cart-1 .cart-item a h1 {color: #000}
 @media (max-width: 360px) {
 .subscription .pageapp-login-input i {
     height: inherit !important; line-height: inherit !important; top:5px !important;
 
 }
+
 
 
 

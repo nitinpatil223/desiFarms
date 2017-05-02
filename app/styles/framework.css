@@ -6371,7 +6371,7 @@ calendar*{display:block; overflow:hidden;}
     margin-top:-2px;
 }
 
-.store-cart-1 .cart-item h4 a:first-child{
+.store-cart-1 .cart-item h4 a{
     position:absolute;
     margin-top:-2px;
     font-size:11px;
@@ -7546,10 +7546,16 @@ calendar*{display:block; overflow:hidden;}
     transition-timing-function: ease-out;
     margin: 0 auto;
 }
-.swiper-slide {
+/*.swiper-slide {
     -webkit-flex-shrink: 0;
     -ms-flex: 0 0 auto;
     flex-shrink: 0;
+    width:100%;
+    height: 100%;
+    position: relative;
+}*/
+.swiper-slide {
+ 
     width:100%;
     height: 100%;
     position: relative;
