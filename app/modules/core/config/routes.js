@@ -61,7 +61,7 @@ angular
                             templateUrl: 'modules/core/views/productsdetails.html',
                             controller: 'ProductsdetailsController'
                         })
-                        
+
 			.state('calenderView', {
                             url: '/calenderView',
                             templateUrl: 'modules/core/views/calenderView.html',
@@ -107,6 +107,12 @@ angular
                             templateUrl: 'modules/core/views/home.html',
                             controller: 'HomeController'
                         })
-                    
+                        .state('payment_history', {
+                           url: '/payment_history',
+                           templateUrl: 'modules/core/views/payment_history.html',
+                           controller: 'BillingsController'
+                       })
+
+
             }
         ]);
