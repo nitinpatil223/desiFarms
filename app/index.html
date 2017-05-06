@@ -31,7 +31,7 @@
                     <div class="sidebar-header sidebar-header-image">
                         <div class="overlay dark-overlay"></div>
                         <div class="sidebar-socials">
-                            <a class="close-sidebar" href="#"><i class="ion-android-close"></i></a>
+                            <!--<a class="close-sidebar" href="#"><i class="ion-android-close"></i></a>-->
                             <div class="clear"></div>
                             <div class="outter"><img src="http://lorempixel.com/output/people-q-c-100-100-1.jpg" class="image-circle"></div>
                         </div>
@@ -138,6 +138,16 @@
         <script src="modules/core/controllers/productsdetails.js"></script>
 
 
-
+<script>
+$(document).ready(function(){ 
+  $(".sidebars-light a").click(function(){
+   $(".sidebar").removeClass("sidebar-left-active");
+    $("#page-content").removeClass("body-left-effect");
+	$(".header").removeClass("body-left-effect");
+	$(".header-icon em").removeClass("hm1a hm2a hm3a");
+  });
+ })
+ 
+</script>
     </body>
 </html>
