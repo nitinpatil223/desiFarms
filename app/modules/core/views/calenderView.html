@@ -1,7 +1,51 @@
-
-
-
+<style>
+#page-content {background:#fff !important}
+</style>
 <div class="decoration decoration-margins"></div>
+<div class="content-fullscreen no-bottom">
+<div class="content">
+ 
+  <div id="flight-datepicker" class="input-daterange input-group">
+    <div class="form-item">
+      <label>From Date </label><span class="fontawesome-calendar"></span>
+      <input type="text" id="start-date" name="start" placeholder="Select from date" data-date-format="DD, MM d" class="input-sm form-control"/><span class="date-text date-depart"></span>
+    </div>
+    <div class="form-item">
+      <label>To Date</label><span class="fontawesome-calendar"></span>
+      <input type="text" id="end-date" name="end" placeholder="Select to date" data-date-format="DD, MM d" class="input-sm form-control"/><span class="date-text date-return"></span>
+    </div>
+  </div>
+  <div class="note-box">
+<strong>Note:</strong> If you want to Stop or Hold delivery for more than 14 days, please call our Customer Care Number <br>
+<span> +91 9999 999 999</span>
+</div>
+</div>
+
+
+</div>
+<script>
+var dateSelect     = $('#flight-datepicker');
+var dateDepart     = $('#start-date');
+var dateReturn     = $('#end-date');
+var spanDepart     = $('.date-depart');
+var spanReturn     = $('.date-return');
+var spanDateFormat = 'ddd, MMMM D yyyy';
+
+dateSelect.datepicker({
+  autoclose: true,
+  format: "mm/dd",
+  maxViewMode: 0,
+  startDate: "now"
+}).on('change', function() {
+  var start = $.format.date(dateDepart.datepicker('getDate'), spanDateFormat);
+  var end = $.format.date(dateReturn.datepicker('getDate'), spanDateFormat);
+  spanDepart.text(start);
+  spanReturn.text(end);
+});
+</script>
+
+
+<!--<div class="decoration decoration-margins"></div>
 
 <div class="content-fullscreen no-bottom">    
     <div class="one-half-responsive">
@@ -17,7 +61,7 @@
         </div>
         <div class="decoration half-bottom"></div>
         <div class="calendar-days">
-            <!-- &nbsp adds a space for the single numbers, this way they can be centered in boxes -->
+           
             <a class="light-day" href="#"><i class="ion-record"></i>&nbsp1</a>
             <a class="clear-day" href="#"><i class="ion-record"></i>&nbsp2</a>
             <a class="clear-day" href="#"><i class="ion-record"></i>&nbsp3</a>
@@ -77,6 +121,5 @@
             <div class="clear"></div>
         </div>
     </div>
-</div>
-
+</div>-->
 
