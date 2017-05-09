@@ -112,6 +112,14 @@ angular
                            templateUrl: 'modules/core/views/payment_history.html',
                            controller: 'BillingsController'
                        })
+                       .state('holdsubscription', {
+                           url: '/holdsubscription',
+                           templateUrl: 'modules/core/views/holdsubscription.html',
+                           controller: 'HoldsubscriptionController'
+                       })
+                       
+                       
+                       
 
 
             }

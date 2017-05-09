@@ -30,6 +30,7 @@
     transition:all 500ms ease;
     transition-delay:100ms;
 }
+body {    background: #f6f6f6 !important;}
 
 .page-show{
     opacity:1;

@@ -7,7 +7,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
         <title>Desi Farms India</title>
-		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css'>
+	
 
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" type="text/css" href="styles/skin.css">
@@ -18,9 +18,12 @@
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js'></script>
 
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" />  
+    <link href='styles/bootstrap-datepaginator.css'  rel='stylesheet'/>
 
 
 
@@ -108,7 +111,10 @@
         <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="lib/snapjs/snap.min.js"></script>
         <script src="lib/angular-snap/angular-snap.min.js" type="text/javascript"></script>
+<script src="js/moment.js"></script>
+  	<script src="js/bootstrap-datepicker.js"></script>
 
+  	<script src="js/bootstrap-datepaginator.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/custom.js -->
@@ -139,6 +145,8 @@
         <script src="modules/core/controllers/customercare.js"></script>
         <script src="modules/core/controllers/subscription.js"></script>
         <script src="modules/core/controllers/productsdetails.js"></script>
+        <script src="modules/core/controllers/holdsubscription.js"></script>
+
 
 
 <script>
@@ -149,8 +157,26 @@ $(document).ready(function(){
 	$(".header").removeClass("body-left-effect");
 	$(".header-icon em").removeClass("hm1a hm2a hm3a");
   });
- })
+ });
  
 </script>
+
+<script type="text/javascript">
+			$(window).ready(function(event){
+				var options = {
+					  selectedDate: '2013-01-01',
+					  onSelectedDateChanged: function(event, date) {
+						var d = new Date(date);
+						$('.loader').show();
+						$.get('date-paginator.php?date='+d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate(),function(data){
+							$('.response').html(data);
+							$('.loader').hide();
+						});
+					  }
+					}
+					$('#paginator').datepaginator(options);
+			});
+ 
+		</script>
     </body>
 </html>
