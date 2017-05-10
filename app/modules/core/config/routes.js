@@ -117,6 +117,16 @@ angular
                            templateUrl: 'modules/core/views/holdsubscription.html',
                            controller: 'HoldsubscriptionController'
                        })
+					   .state('login', {
+                           url: '/login',
+                           templateUrl: 'modules/core/views/login.html',
+                           controller: 'LoginController'
+                       })
+					   .state('registration', {
+                           url: '/registration',
+                           templateUrl: 'modules/core/views/registration.html',
+                           controller: 'RegistrationController'
+                       })
                        
                        
                        

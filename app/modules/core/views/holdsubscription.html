@@ -1,8 +1,22 @@
-<div class="container">
-    	
+<style>
+#page-content, body {background:#fff !important}
+</style>
+
+<div class="decoration decoration-margins"></div>
+<div class="content holdpage">
+<p>From Date:</p>
     	<div id="paginator"></div>
    
       <div id="paginator-start-end"></div>
+	  <p>To Date:</p>
+	  <div id="paginator1"></div>
+	  <div id="paginator-start-end"></div>
+	  
+	  <div class="note-box">
+<strong>Note:</strong> If you want to Stop or Hold delivery for more than 14 days, please call our Customer Care Number <br>
+<span> +91 9999 999 999</span>
+</div>
+ <a  href="javascript:void(0)"  class="hold-btn">Hold</a>
     </div>
 
 <script>
@@ -12,4 +26,5 @@ var options = {
     selectedDateFormat:  'YYYY-MM-DD'
 }
 $('#paginator').datepaginator(options);
+$('#paginator1').datepaginator(options);
 </script>

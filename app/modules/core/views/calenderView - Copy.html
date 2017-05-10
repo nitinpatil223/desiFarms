@@ -1,62 +1,47 @@
-
+<style>
+#page-content, body {background:#fff !important}
+</style>
 <div class="decoration decoration-margins"></div>
 <div class="content-fullscreen no-bottom">
 <div class="content">
  
-   <div id="demo">
-     
-        <div id="ca"></div>
+  <div id="flight-datepicker" class="input-daterange input-group">
+    <div class="form-item">
+      <label>From Date </label><span class="fontawesome-calendar"></span>
+      <input type="text" id="start-date" name="start" placeholder="Select from date" data-date-format="DD, MM d" class="input-sm form-control"/><span class="date-text date-depart"></span>
     </div>
-
-
-
- 
+    <div class="form-item">
+      <label>To Date</label><span class="fontawesome-calendar"></span>
+      <input type="text" id="end-date" name="end" placeholder="Select to date" data-date-format="DD, MM d" class="input-sm form-control"/><span class="date-text date-return"></span>
+    </div>
+  </div>
+  <div class="note-box">
+<strong>Note:</strong> If you want to Stop or Hold delivery for more than 14 days, please call our Customer Care Number <br>
+<span> +91 9999 999 999</span>
+</div>
 </div>
 
 
 </div>
- <script>
-    $('#ca').calendar({
-        // view: 'month',
-        width: 320,
-        height: 320,
-        // startWeek: 0,
-        // selectedRang: [new Date(), null],
-        data: [
-    {
-      date: '2015/12/24',
-      value: 'Christmas Eve'
-    },
-    {
-      date: '2015/12/25',
-      value: 'Merry Christmas'
-    },
-    {
-      date: '2016/01/01',
-      value: 'Happy New Year'
-    }
-  ],
-        onSelected: function (view, date, data) {
-            console.log('view:' + view)
-            console.log('date:' + date)
-            console.log('data:' + (data || 'None'));
-        }
-    });
+<script>
+var dateSelect     = $('#flight-datepicker');
+var dateDepart     = $('#start-date');
+var dateReturn     = $('#end-date');
+var spanDepart     = $('.date-depart');
+var spanReturn     = $('.date-return');
+var spanDateFormat = 'ddd, MMMM D yyyy';
 
-    $('#dd').calendar({
-        trigger: '#dt',
-        // offset: [0, 1],
-        zIndex: 999,
-        onSelected: function (view, date, data) {
-            console.log('event: onSelected')
-        },
-        onClose: function (view, date, data) {
-            console.log('event: onClose')
-            console.log('view:' + view)
-            console.log('date:' + date)
-            console.log('data:' + (data || 'None'));
-        }
-    });
+dateSelect.datepicker({
+  autoclose: true,
+  format: "mm/dd",
+  maxViewMode: 0,
+  startDate: "now"
+}).on('change', function() {
+  var start = $.format.date(dateDepart.datepicker('getDate'), spanDateFormat);
+  var end = $.format.date(dateReturn.datepicker('getDate'), spanDateFormat);
+  spanDepart.text(start);
+  spanReturn.text(end);
+});
 </script>
 
 
