@@ -1,49 +1,31 @@
-<div class="decoration decoration-margins"></div>
+<style>
+#page-content, body {background:#fff !important}
+</style>
+<div class="page-fullscreen ">
+				<div class="page-fullscreen-content">
+					<div class="pageapp-login">
+						<a href="#" class="pageapp-login-logo">
+							<img src="images/desi-logo.png" alt="img">
+                                                         
+						</a>
+						<div class="pageapp-login-input">
+							<i class="login-icon ion-person"></i>
+							<input type="text" value="Username" onfocus="if (this.value=='Username') this.value = ''" onblur="if (this.value=='') this.value = 'Username'">
+						</div>                
+						<div class="pageapp-login-input">
+							<i class="login-icon ion-locked"></i>
+							<input type="password" value="password" onfocus="if (this.value=='password') this.value = ''" onblur="if (this.value=='') this.value = 'password'">
+						</div>
+						<div class="pageapp-login-links">
+							<a href="#" class="page-login-forgot"><i class="ion-ios-eye"></i>Forgot Password</a>
+							<a href="#" class="page-login-create">Create Account<i class="ion-person"></i></a>
+							<div class="clear"></div>
+						</div>
 
-<div class="content">
-    <div class="one-half-responsive">
-        <div class="container heading-style">
-            <h4 class="heading-title">Get Started!</h4>
-            <i class="ion-ios-email-outline heading-icon"></i>
-            <div class="line bg-black"></div>
-            <p class="heading-subtitle">
-                OTP will be sent to this number
-            </p>
-        </div>
-        <div class="container no-bottom">
-            <div class="contact-form no-bottom">
-                <!--<div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
-                        <div class="notification-medium bg-green-light">
-                                <h1>OTP Sent!</h1>
-                                <p>
-                                        We'll be back shortly!
-                                </p>
-                                <a href="#" class="hide-notification"><i class="fa fa-times"></i></a>
-                        </div>
-                </div>-->
+						<a href="#!/registration" class="button button-green button-icon button-full half-top full-bottom"><i class="ion-log-in"></i>LOGIN</a>
 
-                <form action="" method="post" class="contactForm">
-                    <fieldset>
-
-                        <!--<div class="formValidationError bg-red-dark" id="contactMessageTextareaError">
-                                <p class="center-text uppercase small-text color-white">Field is empty!</p>
-                        </div>   -->
-                        <div class="formFieldWrap">
-                            <label class="field-title contactNameField" for="contactNameField">Enter Number:<span>(required)</span></label>
-                            <input type="text" name="contactNameField" placeholder="Enter Number" class="contactField requiredField" id="contactNameField"/>
-                        </div>
-
-                        <div class="formSubmitButtonErrorsWrap contactFormButton">
-                            <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" onclick="location.href = '#!/enterOtp';" value="Send OTP" data-formId="contactForm"/>
-                        </div>
-                    </fieldset>
-                </form>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-</div>
+						
+					</div>
+				</div>
+				
+			</div>

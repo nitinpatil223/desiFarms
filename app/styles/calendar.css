@@ -2,7 +2,10 @@
     width: 280px;
     height: 330px;
 	margin: 0 auto !important;
+     
+          margin-bottom: 30px;
 }
+
 
 .calendar-modal {
     display: none;
