@@ -11,6 +11,6 @@ angular
     .controller('RegistrationController', ['$scope',
         function($scope) {
             
-
+            
         }
     ]);
