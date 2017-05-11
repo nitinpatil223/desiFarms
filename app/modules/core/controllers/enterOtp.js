@@ -8,9 +8,11 @@
  */
 angular
     .module('core')
-    .controller('EnterotpController', ['$scope',
-        function($scope) {
+    .controller('EnterotpController', ['$scope','$rootScope',
+        function($scope,$rootScope) {
             
+           $rootScope.menuShow =true; 
+           $rootScope.addToCartShow =true; 
 
         }
     ]);
