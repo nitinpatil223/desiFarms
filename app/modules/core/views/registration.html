@@ -1,33 +1,70 @@
 <style>
 #page-content, body {background:#fff !important}
+.pageapp-login {
+    padding-top: 20px !important;
+}
 </style>
-<div class="page-fullscreen ">
-				<div class="page-fullscreen-content">
+<h5 style="text-align:center">Registration</h5>
+<div class="decoration decoration-margins"></div>
+
+
 					<div class="pageapp-login">
 						<a href="#" class="pageapp-login-logo">
 							<img src="images/desi-logo.png" alt="img">
 						</a>
+
 						<div class="pageapp-login-input">
-							<i class="login-icon ion-person"></i>
-							<input type="text" value="Username" onfocus="if (this.value=='Username') this.value = ''" onblur="if (this.value=='') this.value = 'Username'">
+							
+                                                    <select>
+                                                        <option class="select-title" value="">-- Salutation --</option>
+                                                        <option value="o1">Mr.</option>
+                                                        <option value="o2">Mrs.</option>
+                                                        <option value="o3">Miss</option>
+                                                        
+                                                    </select>
 						</div>                   
 						<div class="pageapp-login-input">
+							<i class="login-icon ion-person"></i>
+							<input type="text" placeholder="First Name"   >
+						</div>                   
+                                            
+						<div class="pageapp-login-input">
+							<i class="login-icon ion-person"></i>
+							<input type="text" placeholder="Last name"   >
+						</div>                   
+						<div class="pageapp-login-input">
+							<i class="login-icon ion-iphone "></i>
+							<input type="text" placeholder="Mobile No"   >
+						</div>                     
+                                            
+						<div class="pageapp-login-input">
 							<i class="login-icon ion-at"></i>
-							<input type="text" value="Email Address" onfocus="if (this.value=='Email Address') this.value = ''" onblur="if (this.value=='') this.value = 'Email Address'">
+							<input type="text" placeholder="Email Address" >
+						</div>                     
+						                
+						<div class="pageapp-login-input">
+							<i class="login-icon ion-pin"></i>
+							<input type="text" placeholder="Flat/Plot No" >
+						</div>                     
+
+						<div class="pageapp-login-input">
+							<i class="login-icon ion-pin"></i>
+							<input type="text" placeholder="Building Name" >
 						</div>                     
 						<div class="pageapp-login-input">
-							<i class="login-icon ion-calendar"></i>
-							<input class="set-today" type="date">                
-						</div>                
-						<div class="pageapp-login-input full-bottom">
-							<i class="login-icon ion-locked"></i>
-							<input type="password" value="password" onfocus="if (this.value=='password') this.value = ''" onblur="if (this.value=='') this.value = 'password'">
-						</div>
+							<i class="login-icon ion-pin"></i>
+							<input type="text" placeholder="Street Road" >
+						</div>                     
+						<div class="pageapp-login-input">
+							<i class="login-icon ion-pin"></i>
+							<input type="text" placeholder="Landmark" >
+						</div>                     
+                                            
 
 						<a href="#!/home" class="button button-green button-icon button-full half-top half-bottom"><i class="ion-log-in"></i>SUBMIT</a>
 
-						
+						<a href="#!/" class="button button-green button-icon button-full half-top half-bottom"><i class="ion-arrow-left-c"></i>Back To Login</a>
 					</div>
-				</div>
-				
-			</div>
+
+
+			

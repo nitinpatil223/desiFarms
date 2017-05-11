@@ -1,8 +1,13 @@
 <style>
 #page-content, body {background:#fff !important}
+.pageapp-login {
+    padding-top: 20px !important;
+}
 </style>
-<div class="page-fullscreen ">
-				<div class="page-fullscreen-content">
+<h5 style="text-align:center">Login</h5>
+<div class="decoration decoration-margins"></div>
+
+
 					<div class="pageapp-login">
 						<a href="#" class="pageapp-login-logo">
 							<img src="images/desi-logo.png" alt="img">
@@ -10,22 +15,20 @@
 						</a>
 						<div class="pageapp-login-input">
 							<i class="login-icon ion-person"></i>
-							<input type="text" value="Username" onfocus="if (this.value=='Username') this.value = ''" onblur="if (this.value=='') this.value = 'Username'">
+							<input type="text" placeholder="MobileNumber" onfocus="if (this.value=='Username') this.value = ''" onblur="if (this.value=='') this.value = 'Username'">
 						</div>                
 						<div class="pageapp-login-input">
 							<i class="login-icon ion-locked"></i>
-							<input type="password" value="password" onfocus="if (this.value=='password') this.value = ''" onblur="if (this.value=='') this.value = 'password'">
+							<input type="password" placeholder="password" onfocus="if (this.value=='password') this.value = ''" onblur="if (this.value=='') this.value = 'password'">
 						</div>
 						<div class="pageapp-login-links">
-							<a href="#" class="page-login-forgot"><i class="ion-ios-eye"></i>Forgot Password</a>
-							<a href="#" class="page-login-create">Create Account<i class="ion-person"></i></a>
+							<a  class="page-login-forgot"><i class="ion-ios-eye"></i>Forgot Password</a>
+							<a href="#!/registration" class="page-login-create">Create Account<i class="ion-person"></i></a>
 							<div class="clear"></div>
 						</div>
 
-						<a href="#!/registration" class="button button-green button-icon button-full half-top full-bottom"><i class="ion-log-in"></i>LOGIN</a>
+						<a href="#!/home" class="button button-green button-icon button-full half-top full-bottom"><i class="ion-log-in"></i>LOGIN</a>
 
 						
 					</div>
-				</div>
-				
-			</div>
+			

@@ -26,8 +26,21 @@ angular
                  * - When the path is `'/'`, route to home
                  * */
                 $stateProvider
+                
+			.state('login', {
+                           url: '/',
+                           templateUrl: 'modules/core/views/login.html',
+                           controller: 'LoginController'
+                       })
+
+			.state('logout', {
+                           url: '/logout',
+                           templateUrl: 'modules/core/views/login.html',
+                           controller: 'LoginController'
+                       })
+                
                         .state('home', {
-                            url: '/',
+                            url: '/home',
                             templateUrl: 'modules/core/views/home.html',
                             controller: 'HomeController'
                         })
@@ -102,11 +115,7 @@ angular
                             templateUrl: 'modules/core/views/subscription.html',
                             controller: 'SubscriptionController'
                         })
-                        .state('logout', {
-                            url: '/logout',
-                            templateUrl: 'modules/core/views/home.html',
-                            controller: 'HomeController'
-                        })
+                       
                         .state('payment_history', {
                            url: '/payment_history',
                            templateUrl: 'modules/core/views/payment_history.html',
@@ -117,12 +126,8 @@ angular
                            templateUrl: 'modules/core/views/holdsubscription.html',
                            controller: 'HoldsubscriptionController'
                        })
-					   .state('login', {
-                           url: '/login',
-                           templateUrl: 'modules/core/views/login.html',
-                           controller: 'LoginController'
-                       })
-					   .state('registration', {
+                       
+			.state('registration', {
                            url: '/registration',
                            templateUrl: 'modules/core/views/registration.html',
                            controller: 'RegistrationController'

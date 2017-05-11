@@ -8,6 +8,9 @@ angular.module('core').controller('HomeController', ['$scope','$cookies','$rootS
     function($scope,$cookies,$rootScope,$state,restAPIService,$window,Constant) {
 		
 		var user= $cookies.get('user');
+                $rootScope.menuShow =false; 
+                $rootScope.addToCartShow =false; 
+                
 		$scope.userObj ={};
 		
 		if (user == "" || user == undefined) {

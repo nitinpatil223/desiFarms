@@ -8,9 +8,11 @@
  */
 angular
     .module('core')
-    .controller('LoginController', ['$scope',
-        function($scope) {
-            
+    .controller('LoginController', ['$scope','$rootScope',
+        function($scope,$rootScope) {
+           
+           $rootScope.menuShow =true; 
+           $rootScope.addToCartShow =true; 
 
         }
     ]);
