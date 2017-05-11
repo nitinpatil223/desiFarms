@@ -6347,6 +6347,7 @@ calendar*{display:block; overflow:hidden;}
     margin-bottom:-5px;
     margin-top:-5px;
     padding-bottom:0px;
+	padding-top: 7px;
 }
 
 .store-cart-1 .cart-item h2{
@@ -6358,6 +6359,7 @@ calendar*{display:block; overflow:hidden;}
 	 color:#ccc;
 	 line-height:18px;
 	     font-weight: normal;
+		 margin-top:13px;
 }
 
 .store-cart-1 .cart-item h3{
@@ -6365,7 +6367,8 @@ calendar*{display:block; overflow:hidden;}
     padding-left:100px;
     font-size:13px;
     font-style:normal;
-    margin-top:0px;
+    margin-top:13px;
+	
 }
 
 /*.store-cart-1 .cart-item h4{
